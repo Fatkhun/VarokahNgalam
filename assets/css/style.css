@@ -1,0 +1,193 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*SEARCH*/
+.form-search .search {
+    max-width: 300px;
+    max-height: 50px; 
+}
+                  
+/* ===========================================================
+   NAVBAR CHANGES   
+   ============================================================*/
+.navbar {
+    font-size: 18px;
+    box-shadow: 0 2px 5px #000;
+}
+
+.navbar-inverse {
+    background: #34495e;
+    min-height: 80px;
+    padding-top: 15px;
+
+}
+
+.navbar-inverse .navbar-nav > .active > a {
+    background: salmon;
+}
+
+.navbar-inverse .navbar-brand {
+    color: #000;
+    font-weight: bolder;
+    font-size: 25px;
+    font-weight:900;
+    letter-spacing: 2px;
+}
+.navbar-inverse :hover .navbar-brand:hover {
+    color: #000;    
+}
+.navbar-inverse .navbar-nav > li > a {
+color: #fff;
+}
+.navbar-inverse {
+border-color: #D6D6D6;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
+color: #000;
+}
+.navbar-toggle {
+    background-color: black;
+}
+
+/*END NAVBAR*/
+
+/*HEADER*/
+#wall1 .skrip {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    margin-top: 15%;
+}
+
+#wall1 .skrip h1 {
+    font-size:   60px;
+}
+
+#wall1 .extratext p {
+    font-size: 20px;
+}
+
+/*END HEADER*/
+
+.image {
+    height: 100vh;
+    width: 100%;
+    background: #55e6c5;
+}
+
+.image-content {
+    height: 500px;
+    width: 100%;
+    background: #55e6c5;
+}
+
+.content {
+    height: auto;
+    width:100%;
+    background: white;
+    z-index: 2;
+}
+
+#wall1 {
+    background: url(../Images/skulls.png) repeat;
+    background-attachment: fixed;
+}
+#wall2 {
+    background: url(../Images/alam1.jpg) no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#wall3 {
+    background: url(../Images/jombang-map.png) no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+.wisata-ikon img {
+    float: right; 
+    margin-right: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center; 
+}
+
+#ikon img {
+    width: 50px;
+    height: 50px;
+    background: lightskyblue;
+    border-radius: 50%;
+    margin-top: 15%;
+    transform: rotate(90deg); 
+    transition: 1s ease; 
+}
+
+#ikon img:hover {
+    background: salmon;
+}
+
+
+.content h1 {
+    font-size: 40px;
+    color: #464646;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    margin: 30px 60px;
+}
+.content p {
+    font-size:20px;
+    color: #343434;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    margin: 30px 60px;
+}
+
+#content_1 {position: relative;}
+
+h1::first-letter {
+    font-size: 60px;
+    font-weight: 600;
+    color:#3cb0f8;
+}
+
+/*CLEARFIX*/
+.clearfix:before, .clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+/*END CLEARFIX*/
+
+/*=======================================
+    MEDIA QUERIES
+    
+    ==================================================*/
+
+@media all and (max-width:786px) and (min-width:381px) {
+    #wall1 .skrip { 
+        margin-top: 15%;
+    }
+    .wisata-ikon img {
+        margin: 0;
+    }
+}
+@media all and (max-width:381px) and (min-width:200px) {
+    #wall1 .skrip { 
+        margin-top: 35%;
+    }
+    .wisata-ikon img {
+        margin: 0;
+    }
+}
